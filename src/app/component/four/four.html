@@ -1,1 +1,17 @@
-<p>four works!</p>
+<div class="card bg-dark text-white border-primary my-5">
+  <div class="card-body">
+    <h5 class="card-title text-info">Payroll Details</h5>
+    
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item bg-transparent text-white d-flex justify-content-between">
+        <span>Indian Format:</span>
+        <b class="text-success">{{ empSalary | salaryFormat }}</b>
+      </li>
+
+      <li class="list-group-item bg-transparent text-white d-flex justify-content-between">
+        <span>US Format:</span>
+        <b class="text-warning">{{ empSalary | salaryFormat:'$':'en-US' }}</b>
+      </li>
+    </ul>
+  </div>
+</div>
