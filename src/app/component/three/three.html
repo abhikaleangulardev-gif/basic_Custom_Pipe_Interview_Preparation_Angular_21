@@ -1,1 +1,11 @@
-<p>three works!</p>
+<div class="row my-5">
+    <div class="col-sm-8">
+        <input type="text" class="form-control mb-3" placeholder="Search by name..." [(ngModel)]="searchText">
+
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let user of users | filterPipe:searchText:'name'">
+                {{ user.name }}
+            </li>
+        </ul>
+    </div>
+</div>
