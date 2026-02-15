@@ -12,4 +12,17 @@
             </div>
         </div>
     </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Captialize Every First Letter</h3>
+            </div>
+            <div class="card-body">
+                <input type="text" class="form-control" name="" id="" placeholder="enter your name...."
+                    [(ngModel)]="myTitleName">
+
+                <pre class="text-info my-4"><b>{{myTitleName | captializeEveryFirstLetter}}</b></pre>
+            </div>
+        </div>
+    </div>
 </div>
